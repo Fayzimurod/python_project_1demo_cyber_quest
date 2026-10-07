@@ -93,7 +93,8 @@ class Game:
         else:
             print_color("\nЗдесь тихо... Лишь шум серверов на заднем плане.", Colors.WARNING)
 
-        input("\nНажмите Enter для продолжения...")
+        if self.player.is_alive():
+            input("\nНажмите Enter для продолжения...")
 
     def fight_event(self):
         enemies = [

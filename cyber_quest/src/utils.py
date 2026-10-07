@@ -17,17 +17,19 @@ class Colors:
     BOLD = '\033[1m'
 
 def print_color(text, color=Colors.OKCYAN, delay=0.01):
-    """Вывод цветного текста с эффектом печати."""
-    full_str = f"{color}{text}{Colors.ENDC}"
+    """Вывод цветного текста с корректной задержкой печати."""
+    sys.stdout.write(color)
     if delay > 0:
-        for char in full_str:
+        for char in text:
             sys.stdout.write(char)
             sys.stdout.flush()
             time.sleep(delay)
-        print()
+        sys.stdout.write(Colors.ENDC + '\n')
     else:
-        print(full_str)
+        sys.stdout.write(text + Colors.ENDC + '\n')
+    sys.stdout.flush()
 
 def clear_screen():
     """Очистка терминала."""
     os.system('cls' if os.name == 'nt' else 'clear')
+    
