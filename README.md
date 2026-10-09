@@ -3,7 +3,8 @@ tomorrow will full for whole
 where is my 3rd commit ? 
 I wanna know ... --> 
 
-# ⚡️ CyberQuest 2077: Neo-City Escape
+<!-- # ⚡️ CyberQuest 2077: Neo-City Escape --> 
+# ⚡️ CyberQuest: Neo-City Escape
 
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
 ![Dependencies](https://img.shields.io/badge/dependencies-zero-brightgreen)
@@ -33,3 +34,12 @@ cyber_quest/
 │   └── game.py        # Core game engine, combat, shop, and state management
 │── main.py            # Application entry point
 └── README.md          # Documentation
+```
+
+## 📁 To Start Project 
+- Paste into terminal
+```text 
+cd cyber_quest
+python main.py
+``` 
+<!-- (or in setting up your codespace) -->
